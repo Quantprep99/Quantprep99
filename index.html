@@ -4,51 +4,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quant Prep 99</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #ffffff;
-      color: #333333;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9fafc;
+      color: #333;
     }
     header {
-      background-color: #0056b3;
-      color: white;
-      padding: 1rem;
+      background: linear-gradient(to right, #0056b3, #007bff);
+      padding: 1.5rem;
       text-align: center;
+      color: white;
     }
     nav {
-      margin-top: 10px;
+      margin-top: 1rem;
     }
     nav a {
-      margin: 0 15px;
       color: white;
+      margin: 0 1rem;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffe600;
     }
     section {
-      padding: 2rem;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: #0056b3;
     }
     .topics, .practice {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: auto;
     }
     .card {
-      background-color: #f1f1f1;
-      padding: 1rem;
-      border-radius: 8px;
-      width: 250px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      text-align: center;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
     footer {
-      background-color: #0056b3;
+      background: #0056b3;
       color: white;
       text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
     }
   </style>
 </head>
@@ -65,7 +93,7 @@
 
 <section id="home">
   <h2>Welcome to Quant Prep 99!</h2>
-  <p>Your ultimate resource to ace the Quantitative Aptitude section of the CAT Exam. Master concepts, practice questions, and boost your score!</p>
+  <p style="max-width:600px;margin:auto;font-size:1.1rem;">Your ultimate platform to ace the Quantitative Aptitude section of the CAT Exam. Learn deeply, practice smartly, and aim for your 99+ percentile dream!</p>
 </section>
 
 <section id="topics">
@@ -98,7 +126,7 @@
 </section>
 
 <footer>
-  <p>&copy; 2025 Quant Prep 99. All rights reserved.</p>
+  <p>&copy; 2025 Quant Prep 99. Built with passion for CAT Aspirants. 🚀</p>
 </footer>
 
 </body>
